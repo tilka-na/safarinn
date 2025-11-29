@@ -1,10 +1,11 @@
 import React from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
-
+import Layout from "../layout/layout.jsx";
 export default function Contact() {
   return (
-    <div className="bg-safari-light font-sans min-h-screen flex items-center justify-center p-4">
-      <div className="bg-white max-w-5xl w-full rounded-[40px] shadow-2xl overflow-hidden flex flex-col md:flex-row border border-gray-200">
+    <Layout>
+    <div className="bg-safari-light dark:bg-customBlue font-sans min-h-screen flex items-center justify-center p-4">
+      <div className="bg-white max-w-5xl w-full rounded-[40px] shadow-2xl overflow-hidden flex flex-col md:flex-row border border-dark:bg-customGrey">
 
         {/* LEFT SIDE */}
         <div className="bg-safari-slate p-12 text-white md:w-5/12 relative overflow-hidden">
@@ -85,5 +86,6 @@ export default function Contact() {
 
       </div>
     </div>
+    </Layout>
   );
 }

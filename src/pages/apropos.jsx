@@ -1,8 +1,9 @@
 import React from "react";
 import { ArrowLeft, Plus } from "lucide-react";
-
+import Layout from "../layout/layout.jsx";
 export default function Apropos() {
   return (
+    <Layout>
     <div className="bg-white text-safari-dark font-sans">
 
       {/* RETOUR */}
@@ -89,5 +90,6 @@ export default function Apropos() {
         </div>
       </div>
     </div>
+    </Layout>
   );
 }

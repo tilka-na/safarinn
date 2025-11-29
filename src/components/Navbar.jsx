@@ -20,7 +20,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
                 className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:scale-110 transition"
                 >
                 {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-                </button>
+            </button>
             <button className="md:hidden hover:opacity-70">
             <Menu size={26} />
             </button>

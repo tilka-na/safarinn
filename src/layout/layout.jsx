@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 export default function Layout({ children }) {
   const [darkMode, setDarkMode] = useState(false);
 
-  // Enable / disable dark mode by toggling <html class="dark">
   useEffect(() => {
     const html = document.documentElement;
     if (darkMode) html.classList.add("dark");
@@ -13,11 +12,16 @@ export default function Layout({ children }) {
   }, [darkMode]);
 
   return (
-    <div className="min-h-screen font-sans bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
-        <Navbar darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />
-      <main>{children}</main>
+    <div className="min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors">
+      <Navbar
+        darkMode={darkMode}
+        toggleDarkMode={() => setDarkMode(!darkMode)}
+      />
+      <main className="pt-24">{children}</main>
+
       <Footer />
     </div>
   );
 }
+
   

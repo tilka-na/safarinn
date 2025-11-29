@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Layout from "../layout/layout.jsx";
 import {
   Star,
   Globe,
@@ -27,33 +28,15 @@ export default function Lister() {
   };
 
   return (
-    <div className="bg-safari-light text-safari-dark font-sans overflow-x-hidden">
-      {/* NAVBAR */}
-      <nav className="bg-safari-slate text-white px-6 py-5 flex justify-between items-center sticky top-0 z-50 shadow-lg">
-        <div className="flex items-center gap-2">
-          <span className="font-serif text-3xl font-bold tracking-wider">
-            Safarinn<span className="text-safari-gold text-4xl">.</span>
-          </span>
-        </div>
-        <div className="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest">
-          <a href="/lister" className="border-b-2 border-safari-gold pb-1">
-            Devenir Hôte
-          </a>
-          <a href="/apropos" className="hover:text-safari-gold transition">
-            Notre Approche
-          </a>
-          <a href="/contact" className="hover:text-safari-gold transition">
-            Contact
-          </a>
-        </div>
-      </nav>
+    <Layout>
+    <div className="bg-safari-light text-safari-dark dark:bg-customBlue dark:text-safari-light font-sans overflow-x-hidden">
 
       {/* HEADER */}
       <header className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
         <div className="animate-fade-in-up">
           <h1 className="font-serif text-5xl md:text-6xl leading-tight mb-6">
             Valorisez votre <br />
-            <span className="bg-safari-slate text-white px-2 rounded-lg transform -rotate-1 inline-block">
+            <span className="bg-customGrey text-white px-2 rounded-lg transform -rotate-1 inline-block">
               Riad à Meknès
             </span>
           </h1>
@@ -63,7 +46,7 @@ export default function Lister() {
           </p>
           <button
             onClick={handleScrollToForm}
-            className="bg-safari-dark text-white px-8 py-4 rounded-xl font-bold hover:bg-safari-slate transition transform hover:scale-105 shadow-xl"
+            className="bg-safari-dark text-white px-8 py-4 rounded-xl font-bold hover:bg-customGrey transition transform hover:scale-105 shadow-xl"
           >
             Lister mon établissement
           </button>
@@ -111,7 +94,7 @@ export default function Lister() {
             </p>
           </div>
 
-          <div className="bg-safari-slate p-8 rounded-[30px] text-white shadow-card hover:-translate-y-2 transition duration-300 group">
+          <div className="bg-customGrey p-8 rounded-[30px] text-white shadow-card hover:-translate-y-2 transition duration-300 group">
             <div className="flex justify-between items-start mb-8">
               <h3 className="text-2xl font-medium bg-white/10 px-3 py-1 rounded-lg">Gestion</h3>
               <CalendarCheck className="w-8 h-8 text-safari-gold group-hover:scale-110 transition" />
@@ -134,10 +117,10 @@ export default function Lister() {
       </section>
 
       {/* FORM */}
-      <section ref={formSectionRef} className="bg-white py-20">
+      <section ref={formSectionRef} className="bg-white dark:bg-customBlue py-20">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="bg-safari-light border-2 border-safari-dark rounded-[40px] p-10 md:p-14 relative shadow-2xl">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-safari-slate rounded-bl-[100px] opacity-20"></div>
+          <div className="bg-safari-light dark:bg-customGrey border-2 border-safari-dark rounded-[40px] p-10 md:p-14 relative shadow-2xl">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-customGrey rounded-bl-[100px] opacity-20"></div>
 
             <div className="text-center mb-10">
               <h2 className="text-3xl font-serif font-bold mb-2">Commencez l'aventure</h2>
@@ -155,13 +138,13 @@ export default function Lister() {
                   <input
                     type="text"
                     placeholder="Ex: Riad Zitoune"
-                    className="w-full bg-white border border-gray-300 rounded-full px-6 py-4 focus:outline-none focus:border-safari-slate focus:ring-2 focus:ring-safari-slate/20 transition shadow-sm"
+                    className="w-full bg-white border border-gray-300 rounded-full px-6 py-4 focus:outline-none focus:border-customGrey focus:ring-2 focus:ring-customGrey/20 transition shadow-sm"
                   />
                 </div>
 
                 <div className="space-y-2">
                   <label className="text-sm font-bold uppercase tracking-wider pl-2">Type de bien</label>
-                  <select className="w-full bg-white border border-gray-300 rounded-full px-6 py-4 focus:outline-none focus:border-safari-slate appearance-none transition shadow-sm">
+                  <select className="w-full bg-white border border-gray-300 rounded-full px-6 py-4 focus:outline-none focus:border-customGrey appearance-none transition shadow-sm">
                     <option>Riad Traditionnel</option>
                     <option>Appartement Moderne</option>
                     <option>Villa avec Piscine</option>
@@ -176,7 +159,7 @@ export default function Lister() {
                   <input
                     type="text"
                     placeholder="Ex: 12 Derb El-Cadi, Médina"
-                    className="w-full bg-white border border-gray-300 rounded-full px-6 py-4 focus:outline-none focus:border-safari-slate transition shadow-sm"
+                    className="w-full bg-white border border-gray-300 rounded-full px-6 py-4 focus:outline-none focus:border-customGrey transition shadow-sm"
                   />
                   <MapPin className="absolute right-6 top-4 text-gray-400" />
                 </div>
@@ -184,7 +167,7 @@ export default function Lister() {
 
               <button
                 type="submit"
-                className="w-full bg-safari-dark text-white font-bold text-lg py-5 rounded-full hover:bg-safari-slate transition transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-3"
+                className="w-full bg-safari-dark  text-white font-bold text-lg py-5 rounded-full hover:bg-customGrey transition transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-3"
               >
                 <span>Envoyer ma candidature</span>
                 <ArrowRight className="w-5 h-5" />
@@ -194,7 +177,7 @@ export default function Lister() {
             {/* SUCCESS MESSAGE */}
             <div
               ref={successMessageRef}
-              className="hidden absolute inset-0 bg-safari-slate/95 rounded-[40px] z-20 flex flex-col items-center justify-center text-white text-center p-8 animate-fade-in-up"
+              className="hidden absolute inset-0 bg-customGrey/95 rounded-[40px] z-20 flex flex-col items-center justify-center text-white text-center p-8 animate-fade-in-up"
             >
               <CheckCircle className="w-20 h-20 text-safari-gold mb-4" />
               <h3 className="text-3xl font-serif mb-2">Marhba !</h3>
@@ -213,13 +196,8 @@ export default function Lister() {
           </div>
         </div>
       </section>
-
-      {/* FOOTER */}
-      <footer className="bg-safari-dark text-white py-8 text-center border-t border-gray-800">
-        <p className="font-serif italic text-safari-gold mb-2">Safarinn Meknès</p>
-        <p className="text-xs text-gray-400">Conçu avec passion au cœur du Maroc. © 2025</p>
-      </footer>
     </div>
+    </Layout>
   );
 }
 
