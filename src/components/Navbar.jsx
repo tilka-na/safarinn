@@ -7,13 +7,14 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
                 
             <div className="text-2xl font-extrabold tracking-wide text-customBlue dark:text-gray-100">Safarinn</div>
             <div className="hidden md:flex gap-8 text-sm font-medium">
-                <Link to="/" className="hover:text-customBlue dark:hover:text-white">Accueil</Link>
-                <Link to="/hotels" className="hover:text-customBlue dark:hover:text-white">Hôtels</Link>
-                <Link to="/add-property" className="hover:text-customBlue dark:hover:text-white">Lister un bien</Link>
-                <Link to="/about" className="hover:text-customBlue dark:hover:text-white">À propos</Link>
-                <Link to="/contact" className="hover:text-customBlue dark:hover:text-white">Contact</Link>
+                <Link to="/" className="py-2 hover:text-customBlue dark:hover:text-white">Accueil</Link>
+                <Link to="/hotels" className="py-2 hover:text-customBlue dark:hover:text-white">Hôtels</Link>
+                <Link to="/add-property" className="py-2 hover:text-customBlue dark:hover:text-white">Lister un bien</Link>
+                <Link to="/about" className="py-2 hover:text-customBlue dark:hover:text-white">À propos</Link>
+                <Link to="/contact" className="py-2 hover:text-customBlue dark:hover:text-white">Contact</Link>
+                <Link to="/login" className="px-4 py-2 bg-customBlue text-white rounded-lg hover:bg-customGrey transition">Se connecter</Link>
+                <Link to="/register" className="px-4 py-2 bg-customBlue text-white rounded-lg hover:bg-customGrey transition">S’inscrire</Link>
             </div>
-            
             <div className="flex items-center gap-4">
             <button
                 onClick={toggleDarkMode}

@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowLeft, Plus } from "lucide-react";
+
 import Layout from "../layout/layout.jsx";
 export default function Apropos() {
   return (
@@ -9,10 +10,10 @@ export default function Apropos() {
       {/* RETOUR */}
       <div className="p-6">
         <a
-          href="/lister"
+          href="/"
           className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider hover:text-safari-slate transition"
         >
-          <ArrowLeft className="w-4 h-4" /> Retour
+          <ArrowLeft to={""} className="w-4 h-4" /> Retour
         </a>
       </div>
 
