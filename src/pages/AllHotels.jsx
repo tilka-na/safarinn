@@ -83,12 +83,12 @@ export default function AllHotels() {
 
   return (
     <Layout>
-        <div className='min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col-reverse lg:flex-row items-start justify-between px-4 md:px-6
-      lg:px-8 xl:px-25 py-8'>
+        <div className=' bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-customBlue dark:to-customBlue flex flex-col-reverse lg:flex-row items-start justify-between px-4 md:px-6
+      lg:px-8 xl:px-25 pb-8'>
       <div>
             <div className="flex flex-col items-start text-left">
-                <h1 className="font-serif text-4xl md:text-[40px]">All Hotels</h1>
-                <p className="text-sm md:text-base  text-gray-500/90 mt-2 max-w-174"> Découvrez tous les hôtels disponibles à Meknès. Que vous cherchiez un hôtel de luxe,
+                <h1 className="font-serif text-4xl md:text-[40px] text-safari-dark dark:text-white">All Hotels</h1>
+                <p className="text-sm md:text-base  text-gray-500/90 mt-2 max-w-174 text-safari-dark dark:text-white"> Découvrez tous les hôtels disponibles à Meknès. Que vous cherchiez un hôtel de luxe,
           un riad traditionnel ou un séjour économique, nous avons sélectionné les meilleures options
           pour rendre votre séjour inoubliable. Parcourez les hôtels, comparez les prix et réservez
           facilement en quelques clics.</p>
@@ -104,7 +104,7 @@ export default function AllHotels() {
                     className="text-gray-800 text-2xl md:text-3xl font-playfair cursor-pointer hover:text-indigo-600 transition-colors">{room.name}</p>
                     <div className="flex items-center gap-2">
                       <img src={assets.Starratingicon} alt="StartRating-icon" className='w-5 h-5'/>
-                      <p className="text-gray-600">200+ reviews</p>
+                      <p className="text-gray-600 text-safari-dark dark:text-white">200+ reviews</p>
                     </div>
                     <div className="flex items-center gap-2 text-gray-500">
                       <img src={assets.LocationIcon} alt="Location-icon" className='w-4 h-4'/>
@@ -120,8 +120,8 @@ export default function AllHotels() {
                       ))}
                     </div>
                     <div className="flex items-center justify-between mt-4">
-                      <p className="text-2xl font-bold text-customBlue">${room.price}/night</p>
-                      <button className="px-6 py-3 bg-customBlue text-white rounded-full hover:bg-safari-gold transition-colors font-medium shadow-md hover:shadow-lg">
+                      <p className="text-2xl font-bold text-customBlue dark:text-white">${room.price}/night</p>
+                      <button className="px-6 py-3 bg-customBlue text-safari-dark dark:text-white rounded-full hover:bg-safari-gold transition-colors font-medium shadow-md hover:shadow-lg">
                         View Details
                       </button>
                     </div>
@@ -135,7 +135,7 @@ export default function AllHotels() {
 max-lg:mb-8 min-lg:mt-16">
             <div className={`flex items-center justify-between px-5 py-2.5 min-lg:border-b
               border-gray-300 ${openFilters && "border-b"}`}>
-              <p className="text-sm font-medium text-customBlue-800">FILTERS</p>
+              <p className="text-sm font-medium text-customBlue-800 dark:text-white">FILTERS</p>
               <div className="text-xs cursor-pointer">
                 <span onClick={()=>setOpenFilters(!openFilters)}
                 className="lg:hidden">{openFilters ? 'Hide':'Show'}</span>
@@ -149,7 +149,7 @@ max-lg:mb-8 min-lg:mt-16">
 
               <div className={`${openFilters ? 'h-auto' : "h-0"} overflow-hidden transition-all duration-700`}>
                   <div className="px-6 pt-6">
-                    <p className="font-semibold text-gray-800 pb-4 text-customBlue">Popular filters</p>
+                    <p className="font-semibold text-gray-800 pb-4 text-customBlue dark:text-white">Popular filters</p>
                      {roomTypes.map((room,index)=>(
                       <Checkbox key={index} label={room} selected={selectedRoomTypes.includes(room)} onChange={(checked, label) => {
                         if (checked) {
@@ -161,7 +161,7 @@ max-lg:mb-8 min-lg:mt-16">
                      ))}
                   </div>
                   <div className="px-6 pt-6">
-                    <p className="font-semibold text-gray-800 pb-4 text-customBlue">Price Range</p>
+                    <p className="font-semibold text-gray-800 pb-4 text-customBlue dark:text-white">Price Range</p>
                      {priceRanges.map((range,index)=>(
                       <Checkbox key={index} label={`$ ${range}`} selected={selectedPriceRanges.includes(range)} onChange={(checked, label) => {
                         const cleanLabel = label.replace('$ ', '');
@@ -174,7 +174,7 @@ max-lg:mb-8 min-lg:mt-16">
                      ))}
                   </div>
                   <div className="px-6 pt-8 pb-6">
-                    <p className="font-semibold text-gray-800 pb-4 text-customBlue">Sort By</p>
+                    <p className="font-semibold text-gray-800 pb-4 text-customBlue dark:text-white">Sort By</p>
                      {sortOptions.map((option,index)=>(
                       <RadioButton key={index} label={option}/>
                      ))}

@@ -3,7 +3,7 @@ import SwiperSection from "./SwiperSection";
 
 export default function HERO() {
     return (
-    <section className="w-full mt-20 px-6 py-12 md:py-24 grid md:grid-cols-2 items-center gap-16">
+    <section className="w-full mt-20 px-6 md:pb-24 grid md:grid-cols-2 items-center gap-16">
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white">
             Trouvez votre <span className="text-customGrey">séjour parfait</span>

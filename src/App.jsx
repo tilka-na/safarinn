@@ -14,7 +14,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 export default function App() {
   return (
     <BrowserRouter>
-    <div className="min-h-screen">
+    <div className="min-h-screen ">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/hotels" element={<AllHotels />} />
