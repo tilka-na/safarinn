@@ -6,7 +6,9 @@ import Contact from "./pages/contact.jsx";
 import Login from "./pages/login.jsx";
 import Register from "./pages/register.jsx";
 import RoomsDetails from "./pages/RoomDetails.jsx";
+import AllHotels from "./pages/AllHotels.jsx";
 import "./index.css";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {

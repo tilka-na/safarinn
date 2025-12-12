@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import roomCommonData, { assets, Hotels } from '../assets/Images/asset'
+import Layout from "../layout/layout.jsx";
 
 const RoomsDetails = () => {
   const {id}=useParams()
@@ -13,6 +14,7 @@ const RoomsDetails = () => {
    },[]);
 
   return room && (
+    <Layout>
     <div className='py-28 md:py-35 px-4 md:px-16 lg:px-24 xl:px-32'>
       <div className='flex flex-col md:flex-row items-start md:items-center gap-2'>
         <h1 className='text-3xl md:text-4xl font-playfair'>{room.name}</h1>
@@ -127,6 +129,7 @@ const RoomsDetails = () => {
                            tout en garantissant confort, tranquillité et une véritable expérience marocaine.</p>
                       </div>
     </div>
+    </Layout>
   )
 }
 
