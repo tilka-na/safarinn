@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import Layout from "../layout/layout.jsx";
 export default function Register() {
   const navigate = useNavigate();
   const [form, setForm] = useState({
@@ -43,6 +43,7 @@ export default function Register() {
     navigate("/");
   }
   return (
+    <Layout>
     <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900 p-6">
       <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl p-8 w-full max-w-md">
         <h1 className="text-3xl font-bold mb-6 text-center dark:text-white">Créer un compte</h1>
@@ -92,5 +93,6 @@ export default function Register() {
         </p>
       </div>
     </div>
+    </Layout>
   );
 }

@@ -41,7 +41,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
 
   {/* Mobile Menu */}
   {openMenu && (
-    <div className="md:hidden mt-4 flex flex-col gap-3 text-sm font-medium bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg border dark:border-gray-700 transition-all">
+    <div className="md:hidden absolute flex flex-col gap-3 text-sm font-medium bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg border dark:border-gray-700 transition-all">
       <Link to="/" className="py-2 hover:text-customBlue dark:hover:text-white">Accueil</Link>
       <Link to="/hotels" className="py-2 hover:text-customBlue dark:hover:text-white">Hôtels</Link>
       <Link to="/add-property" className="py-2 hover:text-customBlue dark:hover:text-white">Lister un bien</Link>

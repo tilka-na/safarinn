@@ -5,7 +5,7 @@ import Layout from "../layout/layout.jsx";
 export default function Apropos() {
   return (
     <Layout>
-    <div className="bg-white text-safari-dark font-sans">
+    <div className="bg-white dark:bg-customBlue text-safari-dark dark:text-white font-sans">
 
       {/* RETOUR */}
       <div className="p-6">
@@ -30,7 +30,7 @@ export default function Apropos() {
       <section className="max-w-4xl mx-auto px-6 pb-20 space-y-6">
 
         {/* Étape 01 */}
-        <div className="bg-safari-light border-2 border-safari-dark rounded-[30px] p-8 shadow-[0_5px_0_0_#191A23] hover:translate-y-1 hover:shadow-none transition-all duration-200 cursor-pointer group">
+        <div className="bg-safari-light border-2 dark:text-safari-dark border-safari-dark rounded-[30px] p-8 shadow-[0_5px_0_0_#191A23] hover:translate-y-1 hover:shadow-none transition-all duration-200 cursor-pointer group">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-6">
               <span className="text-4xl font-serif font-bold text-safari-dark">01</span>
@@ -62,7 +62,7 @@ export default function Apropos() {
         </div>
 
         {/* Étape 03 */}
-        <div className="bg-safari-light border-2 border-safari-dark rounded-[30px] p-8 shadow-[0_5px_0_0_#191A23] hover:translate-y-1 hover:shadow-none transition-all duration-200 cursor-pointer group">
+        <div className="bg-safari-light border-2 dark:text-safari-dark border-safari-dark rounded-[30px] p-8 shadow-[0_5px_0_0_#191A23] hover:translate-y-1 hover:shadow-none transition-all duration-200 cursor-pointer group">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-6">
               <span className="text-4xl font-serif font-bold text-safari-dark">03</span>
@@ -79,17 +79,6 @@ export default function Apropos() {
 
       </section>
 
-      {/* Bandeau image */}
-      <div className="w-full h-64 overflow-hidden relative">
-        <img
-          src="https://images.unsplash.com/photo-1590418606746-018840f9cd0f?auto=format&fit=crop&q=80&w=1200"
-          className="w-full h-full object-cover opacity-80"
-          alt="Meknes Pattern"
-        />
-        <div className="absolute inset-0 bg-safari-slate/40 flex items-center justify-center">
-          <span className="text-white font-serif text-3xl font-bold">Safarinn. Quality Living.</span>
-        </div>
-      </div>
     </div>
     </Layout>
   );

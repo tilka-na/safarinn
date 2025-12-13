@@ -121,7 +121,7 @@ export default function AllHotels() {
                     </div>
                     <div className="flex items-center justify-between mt-4">
                       <p className="text-2xl font-bold text-customBlue dark:text-white">${room.price}/night</p>
-                      <button className="px-6 py-3 bg-customBlue text-safari-dark dark:text-white rounded-full hover:bg-safari-gold transition-colors font-medium shadow-md hover:shadow-lg">
+                      <button className="px-6 py-3 bg-customBlue text-white dark:text-white rounded-full hover:bg-safari-gold transition-colors font-medium shadow-md hover:shadow-lg">
                         View Details
                       </button>
                     </div>
@@ -131,7 +131,7 @@ export default function AllHotels() {
             ))}
         </div>
         {/*filters*/}
-          <div className="bg-white w-[28rem] border-2 border-gray-300 text-gray-600
+          <div className="bg-white dark:bg-customGrey w-[28rem] border-2 border-gray-300 dark:border-customGrey text-gray-600 dark:text-white 
 max-lg:mb-8 min-lg:mt-16">
             <div className={`flex items-center justify-between px-5 py-2.5 min-lg:border-b
               border-gray-300 ${openFilters && "border-b"}`}>
@@ -149,7 +149,7 @@ max-lg:mb-8 min-lg:mt-16">
 
               <div className={`${openFilters ? 'h-auto' : "h-0"} overflow-hidden transition-all duration-700`}>
                   <div className="px-6 pt-6">
-                    <p className="font-semibold text-gray-800 pb-4 text-customBlue dark:text-white">Popular filters</p>
+                    <p className="font-semibold text-gray-800 pb-4 text-customBlue dark:text-customBlue">Popular filters</p>
                      {roomTypes.map((room,index)=>(
                       <Checkbox key={index} label={room} selected={selectedRoomTypes.includes(room)} onChange={(checked, label) => {
                         if (checked) {
@@ -161,7 +161,7 @@ max-lg:mb-8 min-lg:mt-16">
                      ))}
                   </div>
                   <div className="px-6 pt-6">
-                    <p className="font-semibold text-gray-800 pb-4 text-customBlue dark:text-white">Price Range</p>
+                    <p className="font-semibold text-gray-800 pb-4 text-customBlue dark:text-customBlue">Price Range</p>
                      {priceRanges.map((range,index)=>(
                       <Checkbox key={index} label={`$ ${range}`} selected={selectedPriceRanges.includes(range)} onChange={(checked, label) => {
                         const cleanLabel = label.replace('$ ', '');
@@ -174,7 +174,7 @@ max-lg:mb-8 min-lg:mt-16">
                      ))}
                   </div>
                   <div className="px-6 pt-8 pb-6">
-                    <p className="font-semibold text-gray-800 pb-4 text-customBlue dark:text-white">Sort By</p>
+                    <p className="font-semibold text-gray-800  pb-4 text-customBlue dark:text-customBlue">Sort By</p>
                      {sortOptions.map((option,index)=>(
                       <RadioButton key={index} label={option}/>
                      ))}

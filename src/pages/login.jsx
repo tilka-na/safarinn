@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-
+import Layout from "../layout/layout.jsx";
 export default function Login() {
   const navigate = useNavigate();
   const [form, setForm] = useState({ email: "", password: "" });
@@ -33,6 +33,7 @@ export default function Login() {
     navigate("/");
   }
   return (
+    <Layout>
     <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900 p-6">
       <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl p-8 w-full max-w-md">
         <h1 className="text-3xl font-bold mb-6 text-center dark:text-white">
@@ -58,6 +59,7 @@ export default function Login() {
         </p>
       </div>
     </div>
+    </Layout>
   );
 }
 

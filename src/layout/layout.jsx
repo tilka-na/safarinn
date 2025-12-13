@@ -17,7 +17,8 @@ export default function Layout({ children }) {
         darkMode={darkMode}
         toggleDarkMode={() => setDarkMode(!darkMode)}
       />
-      <main className="pt-24">{children}</main>
+      <div className="h-20"></div>
+      <main>{children}</main>
 
       <Footer />
     </div>
