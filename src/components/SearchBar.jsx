@@ -1,5 +1,6 @@
 import React from "react";
 import { Search } from "lucide-react";
+import { Link } from "react-router-dom";
 export default function SearchBar() {
     return (
         <div className="px-6 -mt-10 relative z-30">
@@ -24,10 +25,11 @@ export default function SearchBar() {
                 placeholder="Choisissez les dates"
                 />
             </div>
-
+            <Link to="/hotels">
             <button className="bg-customBlue text-white px-6 py-3 rounded-xl shadow-md mt-4 md:mt-0 flex items-center gap-2 font-medium hover:bg-blue-800 transition">
                 <Search size={18} /> Rechercher
             </button>
+            </Link>
             </div>
       </div>
     );

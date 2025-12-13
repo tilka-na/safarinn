@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SwiperSection from "./SwiperSection";
-
+import { Link } from "react-router-dom";
 export default function HERO() {
     return (
     <section className="w-full mt-20 px-6 md:pb-24 grid md:grid-cols-2 items-center gap-16">
@@ -14,10 +14,11 @@ export default function HERO() {
             Réservez parmi les meilleurs hôtels, riads et appartements avec une
             plateforme simple, rapide et moderne.
           </p>
-
+          <Link to="/hotels">
           <button className="mt-2 bg-customBlue text-white px-7 py-4 rounded-xl shadow-md font-semibold hover:bg-blue-800 transition-all">
             Explorer les hôtels
           </button>
+          </Link>
         </div>
         <SwiperSection/>
     </section>
