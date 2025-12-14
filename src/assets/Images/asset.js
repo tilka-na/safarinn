@@ -97,8 +97,8 @@ export const Hotels = [
     city: "Meknès",
     price: 40,
     rating: 4.0,
-    images: [imag.HôtelIbis1,imag.HôtelIbis2,imag.HôtelIbis3,imag.HôtelIbis4,
-      imag.HôtelIbis5,imag.HôtelIbis6,imag.HôtelIbis7
+    images: [imag.HotelIbis1,imag.HotelIbis2,imag.HotelIbis3,imag.HotelIbis4,
+      imag.HotelIbis5,imag.HotelIbis6,imag.HotelIbis7
     ],
     description: "Hôtel pratique et économique avec chambres confortables, idéal pour voyageurs d'affaires et touristes.",
     location: { address: "Avenue des F.A.R & My Ismaïl" },

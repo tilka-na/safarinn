@@ -23,7 +23,7 @@ import HotelIbis3 from './Hotel-Ibis-3.jpg'
 import HotelIbis4 from './Hotel-Ibis-4.jpg'
 import HotelIbis5 from './Hotel-Ibis-5.jpg'
 import HotelIbis6 from './Hotel-Ibis-6.jpeg'
-import HôtelIbis7 from './Hotel-Ibis-7.jpeg'
+import HotelIbis7 from './Hotel-Ibis-7.jpeg'
 /*Z Hotel Meknès*/
 import ZHotelMeknes1 from './ZHotelMeknès1.jpeg'
 import ZHotelMeknes2 from './ZHotelMeknès2.jpeg'
@@ -170,7 +170,7 @@ import BabMansour6 from './BabMansour6.jpeg'
 /*roomBeaux,bedroomBeaux,breakfastBeaux,ketchenBeaux,dwiraBeaux,salonBeaux,*/ 
 export const imag={
     roomZahra,roommZahra,dwiraZahra,salonZahra,ketchenZahra,breakfastZahra,bedroomZahra
-    ,HotelIbis1,HotelIbis2,HotelIbis3,HotelIbis4,HotelIbis5,HotelIbis6,HôtelIbis7,
+    ,HotelIbis1,HotelIbis2,HotelIbis3,HotelIbis4,HotelIbis5,HotelIbis6,HotelIbis7,
     ZHotelMeknes1,ZHotelMeknes2,ZHotelMeknes3,ZHotelMeknes4,ZHotelMeknes5,ZHotelMeknes6,
     ZHotelMeknes7,ZHotelMeknes8,
     HotelAkouas1,HotelAkouas2,HotelAkouas3,HotelAkouas4,HotelAkouas5,HotelAkouas6,HotelAkouas7,HotelAkouas8,HotelAkouas9,
