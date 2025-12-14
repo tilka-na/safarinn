@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -17,8 +16,7 @@ export default function SwiperSection() {
             autoplay={{ delay: 3000 }}
             loop={true}
             slidesPerView={1}
-              >
-
+            >
             <SwiperSlide>
               <img src={image1} alt="hotel" className="w-full h-96 object-cover" />
             </SwiperSlide>

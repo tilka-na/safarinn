@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 export default function Footer() {
     return (
         <footer className="px-6 py-14 bg-customGrey text-gray-300 dark:bg-black dark:text-gray-400 grid md:grid-cols-3 gap-12">
@@ -8,11 +9,11 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col gap-2 text-sm">
-            <a href="#" className="hover:text-white">Accueil</a>
-            <a href="#" className="hover:text-white">Hôtels</a>
-            <a href="#" className="hover:text-white">Lister un bien</a>
-            <a href="#" className="hover:text-white">À propos</a>
-            <a href="#" className="hover:text-white">Contact</a>
+        <Link to="/" className="hover:text-white">Accueil</Link>
+        <Link to="/hotels" className="hover:text-white">Hôtels</Link>
+        <Link to="/add-property" className="hover:text-white">Lister un bien</Link>
+        <Link to="/about" className="hover:text-white">À propos</Link>
+        <Link to="/contact" className="hover:text-white">Contact</Link>
             </div>
 
             <div className="text-sm">
