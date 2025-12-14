@@ -64,9 +64,8 @@ export const Hotels = [
       { name: "Parking", icon: facilityIcons["Parking"] }
     ],
     rooms: [
-      { type: "Single", price: 35 },
-      { type: "Double", price: 50 },
-      { type: "Suite", price: 70 }
+      { type: "Single Room", price: 35 },
+      { type: "Double Room", price: 50 }
     ]
   },
   {
@@ -75,8 +74,8 @@ export const Hotels = [
     city: "Meknès",
     price: 50,
     rating: 4.1,
-    images: [imag.HotelMenzahDalia1,imag.HotelMenzahDalia2,imag.HotelMenzahDalia3,imag.HotelMenzahDalia4,
-      imag.HotelMenzahDalia5,imag.HotelMenzahDalia6,imag.HotelMenzahDalia7,imag.HotelMenzahDalia8,imag.HotelMenzahDalia9
+    images: [imag.HotelMenzahDalia8,imag.HotelMenzahDalia2,imag.HotelMenzahDalia3,imag.HotelMenzahDalia4,
+      imag.HotelMenzahDalia5,imag.HotelMenzahDalia6,imag.HotelMenzahDalia7,imag.HotelMenzahDalia1,imag.HotelMenzahDalia9
     ],
     description: "Hôtel confortable avec chambres modernes, situé au centre de Meknès. Proximité des monuments et restaurants.",
     location: { address: "Quartier Marjane, Meknès" },
@@ -86,8 +85,8 @@ export const Hotels = [
       { name: "Restaurant", icon: facilityIcons["Restaurant"] }
     ],
     rooms: [
-      { type: "Single", price: 50 },
-      { type: "Double", price: 65 },
+      { type: "Single Room", price: 50 },
+      { type: "Double Room", price: 65 },
       { type: "Suite", price: 90 }
     ]
   },
@@ -96,7 +95,7 @@ export const Hotels = [
     name: "Ibis Meknès",
     city: "Meknès",
     price: 40,
-    rating: 4.0,
+    rating: 4.5,
     images: [imag.HotelIbis1,imag.HotelIbis2,imag.HotelIbis3,imag.HotelIbis4,
       imag.HotelIbis5,imag.HotelIbis6,imag.HotelIbis7
     ],
@@ -108,8 +107,7 @@ export const Hotels = [
       { name: "24h Reception", icon: facilityIcons["24h Reception"] }
     ],
     rooms: [
-      { type: "Single", price: 40 },
-      { type: "Double", price: 55 },
+      { type: "Double Room", price: 55 },
       { type: "Suite", price: 80 }
     ]
   },
@@ -129,8 +127,8 @@ export const Hotels = [
       { name: "Non-Smoking", icon: facilityIcons["Non-Smoking"] }
     ],
     rooms: [
-      { type: "Single", price: 45 },
-      { type: "Double", price: 60 },
+      { type: "Single room", price: 45 },
+      { type: "Double room", price: 60 },
       { type: "Suite", price: 85 }
     ]
   },
@@ -151,8 +149,8 @@ export const Hotels = [
       { name: "24h Reception", icon: facilityIcons["24h Reception"] }
     ],
     rooms: [
-      { type: "Single", price: 30 },
-      { type: "Double", price: 45 },
+      { type: "Single room", price: 30 },
+      { type: "Double room", price: 45 },
       { type: "Suite", price: 65 }
     ]
   },
@@ -173,8 +171,8 @@ export const Hotels = [
       { name: "Non-Smoking", icon: facilityIcons["Non-Smoking"] }
     ],
     rooms: [
-      { type: "Single", price: 38 },
-      { type: "Double", price: 55 },
+      { type: "Single Room", price: 38 },
+      { type: "Double Room", price: 55 },
       { type: "Suite", price: 75 }
     ]
   },
@@ -195,8 +193,8 @@ export const Hotels = [
       { name: "Non-Smoking", icon: facilityIcons["Non-Smoking"] }
     ],
     rooms: [
-      { type: "Single", price: 36 },
-      { type: "Double", price: 50 },
+      { type: "Single Room", price: 36 },
+      { type: "Double Room", price: 50 },
       { type: "Suite", price: 70 }
     ]
   },
@@ -217,8 +215,7 @@ export const Hotels = [
       { name: "Room Service", icon: facilityIcons["Room Service"] }
     ],
     rooms: [
-      { type: "Single", price: 32 },
-      { type: "Double", price: 48 },
+      { type: "Double Room", price: 48 },
       { type: "Suite", price: 68 }
     ]
   },
@@ -238,9 +235,8 @@ export const Hotels = [
       { name: "Parking", icon: facilityIcons["Parking"] }
     ],
     rooms: [
-      { type: "Single", price: 42 },
-      { type: "Double", price: 58 },
-      { type: "Suite", price: 82 }
+      { type: "Single Room", price: 42 },
+      { type: "Double Room", price: 58 }
     ]
   },
   {
@@ -260,8 +256,8 @@ export const Hotels = [
       { name: "Non-Smoking", icon: facilityIcons["Non-Smoking"] }
     ],
     rooms: [
-      { type: "Single", price: 33 },
-      { type: "Double", price: 47 },
+      { type: "Single Room", price: 33 },
+      { type: "Double Room", price: 47 },
       { type: "Suite", price: 65 }
     ]
   },
@@ -282,8 +278,7 @@ export const Hotels = [
       { name: "Non-Smoking", icon: facilityIcons["Non-Smoking"] }
     ],
     rooms: [
-      { type: "Single", price: 37 },
-      { type: "Double", price: 52 },
+      { type: "Single Room", price: 37 },
       { type: "Suite", price: 72 }
     ]
   },
@@ -304,8 +299,8 @@ export const Hotels = [
       { name: "Breakfast Included", icon: facilityIcons["Breakfast Included"] }
     ],
     rooms: [
-      { type: "Single", price: 34 },
-      { type: "Double", price: 48 },
+      { type: "Single Room", price: 34 },
+      { type: "Double Room", price: 48 },
       { type: "Suite", price: 68 }
     ]
   },
@@ -326,8 +321,8 @@ export const Hotels = [
       { name: "Non-Smoking", icon: facilityIcons["Non-Smoking"] }
     ],
     rooms: [
-      { type: "Single", price: 40 },
-      { type: "Double", price: 56 },
+      { type: "Single Room", price: 40 },
+      { type: "Double Room", price: 56 },
       { type: "Suite", price: 78 }
     ]
   },
@@ -348,8 +343,8 @@ export const Hotels = [
       { name: "Non-Smoking", icon: facilityIcons["Non-Smoking"] }
     ],
     rooms: [
-      { type: "Single", price: 36 },
-      { type: "Double", price: 50 },
+      { type: "Single Room", price: 36 },
+      { type: "Double Room", price: 50 },
       { type: "Suite", price: 70 }
     ]
   },
@@ -370,8 +365,7 @@ export const Hotels = [
       { name: "Breakfast Included", icon: facilityIcons["Breakfast Included"] }
     ],
     rooms: [
-      { type: "Single", price: 38 },
-      { type: "Double", price: 54 },
+      { type: "Double Room", price: 54 },
       { type: "Suite", price: 74 }
     ]
   },
@@ -392,8 +386,8 @@ export const Hotels = [
       { name: "Breakfast Included", icon: facilityIcons["Breakfast Included"] }
     ],
     rooms: [
-      { type: "Single", price: 37 },
-      { type: "Double", price: 52 },
+      { type: "Single Room", price: 37 },
+      { type: "Double Room", price: 52 },
       { type: "Suite", price: 72 }
     ]
   },
@@ -414,8 +408,8 @@ export const Hotels = [
       { name: "Breakfast Included", icon: facilityIcons["Breakfast Included"] }
     ],
     rooms: [
-      { type: "Single", price: 36 },
-      { type: "Double", price: 50 },
+      { type: "Single Room", price: 36 },
+      { type: "Double Room", price: 50 },
       { type: "Suite", price: 70 }
     ]
   },
@@ -436,8 +430,8 @@ export const Hotels = [
       { name: "Breakfast Included", icon: facilityIcons["Breakfast Included"] }
     ],
     rooms: [
-      { type: "Single", price: 34 },
-      { type: "Double", price: 48 },
+      { type: "Single Room", price: 34 },
+      { type: "Double Room", price: 48 },
       { type: "Suite", price: 68 }
     ]
   },
@@ -457,8 +451,7 @@ export const Hotels = [
       { name: "Parking", icon: facilityIcons["Parking"] }
     ],
     rooms: [
-      { type: "Single", price: 45 },
-      { type: "Double", price: 60 },
+      { type: "Double Room", price: 60 },
       { type: "Suite", price: 88 }
     ]
   }

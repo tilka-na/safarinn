@@ -167,7 +167,6 @@ import BabMansour3 from './BabMansour3.jpeg'
 import BabMansour4 from './BabMansour4.jpeg'
 import BabMansour5 from './BabMansour5.jpeg'
 import BabMansour6 from './BabMansour6.jpeg'
-/*roomBeaux,bedroomBeaux,breakfastBeaux,ketchenBeaux,dwiraBeaux,salonBeaux,*/ 
 export const imag={
     roomZahra,roommZahra,dwiraZahra,salonZahra,ketchenZahra,breakfastZahra,bedroomZahra
     ,HotelIbis1,HotelIbis2,HotelIbis3,HotelIbis4,HotelIbis5,HotelIbis6,HotelIbis7,
