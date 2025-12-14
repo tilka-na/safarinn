@@ -15,7 +15,7 @@ export default function HERO() {
             plateforme simple, rapide et moderne.
           </p>
           <Link to="/hotels">
-          <button className="mt-2 bg-customBlue text-white px-7 py-4 rounded-xl shadow-md font-semibold hover:bg-blue-800 transition-all">
+          <button className="mt-2 bg-customBlue text-white px-7 py-4 rounded-xl shadow-md font-semibold hover:bg-customGrey transition-all">
             Explorer les hôtels
           </button>
           </Link>
